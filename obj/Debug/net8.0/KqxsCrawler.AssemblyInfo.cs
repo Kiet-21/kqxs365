@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KqxsCrawler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94f6a5e8bf5de70ed32eca9362874d772d2f344e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bed25dfd90ab97ddba8f8ffd32a19978f095bff")]
 [assembly: System.Reflection.AssemblyProductAttribute("KqxsCrawler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KqxsCrawler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
