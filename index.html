@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kết Quả Xổ Số Hôm Nay - XSMB XSMT XSMN</title>
+<meta name="description" content="Kết quả xổ số hôm nay 3 miền Bắc Trung Nam nhanh nhất, chính xác nhất. XSMB XSMT XSMN cập nhật trực tiếp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0a0e1a;
+    --bg2:       #111827;
+    --bg3:       #1a2235;
+    --card:      #141c2e;
+    --border:    #1e2d45;
+    --gold:      #f5c842;
+    --gold2:     #e8a020;
+    --red:       #e83e3e;
+    --green:     #22c55e;
+    --blue:      #3b82f6;
+    --cyan:      #06b6d4;
+    --text:      #e2e8f0;
+    --muted:     #64748b;
+    --mb-color:  #3b82f6;
+    --mt-color:  #a855f7;
+    --mn-color:  #f97316;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    background: linear-gradient(135deg, #0d1b35 0%, #0a1628 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Teko', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--gold);
+  }
+  .logo span { color: var(--text); }
+  .header-date {
+    font-size: 13px;
+    color: var(--muted);
+    text-align: right;
+  }
+  .header-date strong { color: var(--text); display: block; font-size: 15px; }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(180deg, #0d1b35 0%, var(--bg) 100%);
+    padding: 32px 20px 24px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 2px;
+    line-height: 1.1;
+  }
+  .hero p { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  .update-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #0d2b1a; border: 1px solid #166534;
+    color: var(--green); font-size: 12px; font-weight: 600;
+    padding: 4px 12px; border-radius: 20px; margin-top: 12px;
+  }
+  .update-badge::before { content:'●'; animation: blink 1.5s infinite; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  /* ── Tabs ── */
+  .tabs-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 20px 0;
+  }
+  .tabs {
+    display: flex; gap: 6px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 6px;
+    width: fit-content;
+  }
+  .tab {
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s;
+    letter-spacing: .5px;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: #fff; }
+  .tab[data-tab="mb"].active { background: var(--mb-color); }
+  .tab[data-tab="mt"].active { background: var(--mt-color); }
+  .tab[data-tab="mn"].active { background: var(--mn-color); }
+  .tab[data-tab="all"].active { background: var(--gold2); color: #000; }
+
+  /* ── Main ── */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* ── Section title ── */
+  .section-title {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 28px 0 14px;
+  }
+  .section-title .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .mb-section .dot  { background: var(--mb-color); }
+  .mt-section .dot  { background: var(--mt-color); }
+  .mn-section .dot  { background: var(--mn-color); }
+
+  /* ── Grid ── */
+  .province-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+  }
+
+  /* ── Province Card ── */
+  .province-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color .2s, transform .2s;
+  }
+  .province-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+  .card-header {
+    padding: 12px 16px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+  .card-header h3 {
+    font-size: 15px; font-weight: 700; color: var(--text);
+  }
+  .card-header .region-badge {
+    font-size: 10px; font-weight: 700;
+    padding: 2px 8px; border-radius: 4px;
+    letter-spacing: .5px;
+  }
+  .mb-card .region-badge { background: rgba(59,130,246,.15); color: var(--mb-color); }
+  .mt-card .region-badge { background: rgba(168,85,247,.15); color: var(--mt-color); }
+  .mn-card .region-badge { background: rgba(249,115,22,.15); color: var(--mn-color); }
+
+  /* Prize table inside card */
+  .prize-table { width: 100%; }
+  .prize-row {
+    display: flex;
+    padding: 5px 16px;
+    border-bottom: 1px solid rgba(30,45,69,.6);
+    align-items: center;
+    gap: 8px;
+  }
+  .prize-row:last-child { border-bottom: none; }
+  .prize-label {
+    font-size: 11px; color: var(--muted);
+    width: 60px; flex-shrink: 0;
+    font-weight: 500;
+  }
+  .prize-numbers {
+    display: flex; flex-wrap: wrap; gap: 4px;
+    flex: 1;
+  }
+  .prize-num {
+    font-family: 'Teko', sans-serif;
+    font-size: 17px; font-weight: 500;
+    letter-spacing: .5px;
+    color: var(--text);
+    padding: 1px 4px;
+    border-radius: 4px;
+  }
+  .prize-db .prize-num {
+    font-size: 22px; font-weight: 700;
+    color: var(--gold);
+    background: rgba(245,200,66,.08);
+  }
+  .prize-1 .prize-num { color: var(--red); }
+
+  /* ── Loading ── */
+  .loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+  }
+  .spinner {
+    width: 40px; height: 40px;
+    border: 3px solid var(--border);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+    margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Error ── */
+  .error-box {
+    background: rgba(232,62,62,.1);
+    border: 1px solid rgba(232,62,62,.3);
+    color: #fca5a5;
+    padding: 20px; border-radius: 12px;
+    text-align: center; margin: 40px 0;
+  }
+
+  /* ── Empty ── */
+  .empty-card {
+    background: var(--card);
+    border: 1px dashed var(--border);
+    border-radius: 14px;
+    padding: 32px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  /* ── Footer ── */
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 60px;
+    padding: 24px 20px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--gold); }
+
+  /* ── Responsive ── */
+  @media (max-width: 600px) {
+    .tabs { flex-wrap: wrap; }
+    .tab { font-size: 12px; padding: 7px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">XS<span>365</span></div>
+    <div class="header-date">
+      <strong id="todayDate">--/--/----</strong>
+      <span id="todayDow">--</span>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>KẾT QUẢ XỔ SỐ HÔM NAY</h1>
+  <p>Cập nhật nhanh nhất · Chính xác nhất · 3 miền Bắc Trung Nam</p>
+  <div class="update-badge" id="updateBadge">Đang tải dữ liệu...</div>
+</div>
+
+<div class="tabs-wrap">
+  <div class="tabs">
+    <button class="tab active" data-tab="all">Tất cả</button>
+    <button class="tab" data-tab="mb">Miền Bắc</button>
+    <button class="tab" data-tab="mt">Miền Trung</button>
+    <button class="tab" data-tab="mn">Miền Nam</button>
+  </div>
+</div>
+
+<main id="mainContent">
+  <div class="loading">
+    <div class="spinner"></div>
+    <p>Đang tải kết quả xổ số...</p>
+  </div>
+</main>
+
+<!-- AdSense placeholder - thay bằng code AdSense thật của bạn -->
+<!--
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+     data-ad-slot="XXXXXXXXXX"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+-->
+
+<footer>
+  <p>© 2024 XS365 · Kết quả xổ số 3 miền hàng ngày</p>
+  <p style="margin-top:8px">
+    <a href="#">Trang chủ</a> · 
+    <a href="#">Thống kê</a> · 
+    <a href="#">Lịch xổ số</a> · 
+    <a href="#">Giới thiệu</a>
+  </p>
+  <p style="margin-top:12px; font-size:11px; color:#334155">
+    Thông tin chỉ mang tính chất tham khảo. Chúng tôi không khuyến khích cờ bạc.
+  </p>
+</footer>
+
+<script>
+// ================================================================
+//  Website KQXS - Đọc data từ JSON do C# Crawler tạo ra
+// ================================================================
+
+const DATA_URL = './data/latest.json';
+let currentData = null;
+let currentTab  = 'all';
+// Tự động reload data mỗi 5 phút
+setInterval(async () => {
+  await loadData();
+}, 5 * 60 * 1000);
+// ── Khởi động ──
+window.addEventListener('DOMContentLoaded', async () => {
+  updateHeaderDate();
+  await loadData();
+  setupTabs();
+});
+
+// ── Cập nhật ngày tháng trên header ──
+function updateHeaderDate() {
+  const now = new Date();
+  const days = ['Chủ Nhật','Thứ Hai','Thứ Ba','Thứ Tư','Thứ Năm','Thứ Sáu','Thứ Bảy'];
+  document.getElementById('todayDate').textContent =
+    now.toLocaleDateString('vi-VN', { day:'2-digit', month:'2-digit', year:'numeric' });
+  document.getElementById('todayDow').textContent = days[now.getDay()];
+}
+
+// ── Tải dữ liệu JSON ──
+async function loadData() {
+  try {
+    const resp = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('Chưa có dữ liệu hôm nay');
+    currentData = await resp.json();
+
+    const badge = document.getElementById('updateBadge');
+    badge.textContent = 'Cập nhật lúc ' + formatTime(currentData.updatedAt);
+
+    renderAll();
+  } catch (err) {
+    showError(err.message);
+  }
+}
+
+function formatTime(iso) {
+  if (!iso) return '--:--';
+  const d = new Date(iso);
+  return d.toLocaleTimeString('vi-VN', { hour:'2-digit', minute:'2-digit' });
+}
+
+// ── Setup tabs ──
+function setupTabs() {
+  document.querySelectorAll('.tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentTab = btn.dataset.tab;
+      renderAll();
+    });
+  });
+}
+
+// ── Render toàn bộ ──
+function renderAll() {
+  const main = document.getElementById('mainContent');
+  if (!currentData) return;
+
+  let html = '';
+
+  if (currentTab === 'all' || currentTab === 'mb') {
+    html += renderSection('mb-section', 'MIỀN BẮC', currentData.mienBac || [], 'mb-card');
+  }
+  if (currentTab === 'all' || currentTab === 'mt') {
+    html += renderSection('mt-section', 'MIỀN TRUNG', currentData.mienTrung || [], 'mt-card');
+  }
+  if (currentTab === 'all' || currentTab === 'mn') {
+    html += renderSection('mn-section', 'MIỀN NAM', currentData.mienNam || [], 'mn-card');
+  }
+
+  main.innerHTML = html || '<div class="empty-card">Không có dữ liệu cho mục này.</div>';
+}
+
+// ── Render một miền ──
+function renderSection(cls, title, provinces, cardCls) {
+  const dot = `<span class="dot"></span>`;
+  let html = `<section class="${cls}">`;
+  html += `<div class="section-title">${dot}${title}</div>`;
+  html += `<div class="province-grid">`;
+
+  if (!provinces.length) {
+    html += `<div class="empty-card">Chưa có kết quả hôm nay.</div>`;
+  } else {
+    provinces.forEach(p => {
+      html += renderProvinceCard(p, cardCls);
+    });
+  }
+
+  html += `</div></section>`;
+  return html;
+}
+
+// ── Render card một tỉnh ──
+function renderProvinceCard(province, cardCls) {
+  const regionLabels = { MB:'Bắc', MT:'Trung', MN:'Nam' };
+  const badge = regionLabels[province.region] || province.region;
+
+  let html = `
+    <div class="province-card ${cardCls}">
+      <div class="card-header">
+        <h3>${province.provinceName}</h3>
+        <span class="region-badge">${badge}</span>
+      </div>
+      <div class="prize-table">`;
+
+  const prizes = province.prizes || {};
+  const prizeOrder = ['Giải ĐB','Giải Nhất','Giải Nhì','Giải Ba','Giải Tư','Giải Năm','Giải Sáu','Giải Bảy','Giải Tám'];
+
+  prizeOrder.forEach(prizeName => {
+    if (!prizes[prizeName]) return;
+    const nums = prizes[prizeName];
+    const isDB = prizeName === 'Giải ĐB';
+    const is1  = prizeName === 'Giải Nhất';
+    const rowClass = isDB ? 'prize-db' : (is1 ? 'prize-1' : '');
+
+    html += `<div class="prize-row ${rowClass}">
+      <span class="prize-label">${prizeName}</span>
+      <div class="prize-numbers">
+        ${nums.map(n => `<span class="prize-num">${n}</span>`).join('')}
+      </div>
+    </div>`;
+  });
+
+  html += `</div></div>`;
+  return html;
+}
+
+// ── Hiển thị lỗi ──
+function showError(msg) {
+  document.getElementById('mainContent').innerHTML = `
+    <div class="error-box">
+      <p style="font-size:18px; margin-bottom:8px">⚠️ Chưa có dữ liệu hôm nay</p>
+      <p style="font-size:13px; color:#94a3b8">${msg}</p>
+      <p style="font-size:13px; margin-top:12px; color:#64748b">
+        Hãy chạy C# Crawler để cập nhật kết quả mới nhất.
+      </p>
+    </div>`;
+
+  document.getElementById('updateBadge').textContent = 'Chưa có dữ liệu';
+  document.getElementById('updateBadge').style.background = '#2d1515';
+  document.getElementById('updateBadge').style.borderColor = '#7f1d1d';
+  document.getElementById('updateBadge').style.color = '#f87171';
+}
+</script>
+</body>
+</html>

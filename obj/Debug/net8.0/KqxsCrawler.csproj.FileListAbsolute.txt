@@ -1,0 +1,17 @@
+D:\mn\files\bin\Debug\net8.0\KqxsCrawler.exe
+D:\mn\files\bin\Debug\net8.0\KqxsCrawler.deps.json
+D:\mn\files\bin\Debug\net8.0\KqxsCrawler.runtimeconfig.json
+D:\mn\files\bin\Debug\net8.0\KqxsCrawler.dll
+D:\mn\files\bin\Debug\net8.0\KqxsCrawler.pdb
+D:\mn\files\bin\Debug\net8.0\HtmlAgilityPack.dll
+D:\mn\files\obj\Debug\net8.0\KqxsCrawler.csproj.AssemblyReference.cache
+D:\mn\files\obj\Debug\net8.0\KqxsCrawler.GeneratedMSBuildEditorConfig.editorconfig
+D:\mn\files\obj\Debug\net8.0\KqxsCrawler.AssemblyInfoInputs.cache
+D:\mn\files\obj\Debug\net8.0\KqxsCrawler.AssemblyInfo.cs
+D:\mn\files\obj\Debug\net8.0\KqxsCrawler.csproj.CoreCompileInputs.cache
+D:\mn\files\obj\Debug\net8.0\KqxsCraw.F1C228FA.Up2Date
+D:\mn\files\obj\Debug\net8.0\KqxsCrawler.dll
+D:\mn\files\obj\Debug\net8.0\refint\KqxsCrawler.dll
+D:\mn\files\obj\Debug\net8.0\KqxsCrawler.pdb
+D:\mn\files\obj\Debug\net8.0\KqxsCrawler.genruntimeconfig.cache
+D:\mn\files\obj\Debug\net8.0\ref\KqxsCrawler.dll
